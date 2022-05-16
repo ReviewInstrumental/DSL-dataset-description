@@ -1,0 +1,10 @@
+{
+  "iconDefinitions": {
+    "_datadesc": {
+        "iconPath": "./File.svg",
+    }
+  },
+  "languageIds":{
+    "dataset-descriptor":"_datadesc"
+  }
+}
