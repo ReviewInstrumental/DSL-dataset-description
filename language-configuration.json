@@ -1,0 +1,60 @@
+{
+    "comments": {
+        // symbol used for single line comment. Remove this entry if your language does not support line comments
+        "lineComment": "//",
+        // symbols used for start and end a block comment. Remove this entry if your language does not support block comments
+        "blockComment": [ "/*", "*/" ]
+    },
+    // symbols used as brackets
+    "brackets": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"]
+    ],
+    // symbols that are auto closed when typing
+    "autoClosingPairs": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"],
+        ["\"", "\""],
+        ["'", "'"]
+    ],
+    // symbols that can be used to surround a selection
+    "surroundingPairs": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"],
+        ["\"", "\""],
+        ["'", "'"]
+    ],
+    "indentationRules": {
+        "increaseIndentPattern": "^((?!\\/\\/).)*(\\{[^}\"'`]*|\\([^)\"'`]*|\\[[^\\]\"'`]*)$",
+        "decreaseIndentPattern": "^((?!.*?\\/\\*).*\\*/)?\\s*[\\)\\}\\]].*$"
+    },
+    "onEnterRules": [
+        {
+        "beforeText": "^\\s*(?:Authors:|Founders:|Maintainer:).*?\\s*$",
+        "action": { "indent": "indent", "appendText": "Name " }
+        },
+        {
+        "beforeText": "^\\s*(?:Definition:).*?\\s*$",
+        "action": { "indent": "indent", "appendText": "General description: \"\"" }
+        },
+        {
+        "beforeText": "^\\s*(?:Instances:).*?\\s*$",
+        "action": { "indent": "indent", "appendText": "composedBy: " }
+        },
+        {
+        "beforeText": "^\\s*(?:composedBy:).*?\\s*$",
+        "action": { "indent": "indent", "appendText": "Instance: InstanceId " }
+        },
+        {
+        "beforeText": "^\\s*(?:Instance:).*?\\s*$",
+        "action": { "indent": "indent", "appendText": "description \"\"" }
+        },
+        {
+        "beforeText": "^\\s*(?:withAttributes:).*?\\s*$",
+        "action": { "indent": "indent", "appendText": "attribute attributeId" }
+        },
+    ]
+}
