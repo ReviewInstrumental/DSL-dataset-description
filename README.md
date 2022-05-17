@@ -14,7 +14,7 @@ The file is **Dataset-Descriptor-0.0.1.vsix**
 To install the package, open your terminal (or the terminal inside the VSCode) and write this:
 
 ```
-https://github.com/ReviewInstrumental/DSL-dataset-definition.git datasets
+git clone https://github.com/ReviewInstrumental/DSL-dataset-description.git datasets
 
 cd datasets 
 
