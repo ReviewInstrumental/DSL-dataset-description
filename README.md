@@ -1,13 +1,13 @@
 # Dataset-Descriptor
 A Visual Studio Code language plugin to describe machine-learning datasets. This plugin helps you define your data's provenance, composition, and social concerns in a standard format. 
 
-## Techicanl report: Examples using the DSL 
+## Technical report: Examples using the DSL 
 
-As an examples of using our DSL over machine-learning dataset, we present a report **[here](https://github.com/ReviewInstrumental/DSL-dataset-definition/blob/main/examples/evaluation/DSL-Dataset-Definition-examples-report.pdf)** were we describe three benchmark datasets. The description files of the example datasets can be found in the **examples/evaluation** folder.
+As an example of using our DSL over machine-learning datasets, we present a report **[here](https://github.com/ReviewInstrumental/DSL-dataset-description/blob/master/examples/evaluation/DSL-Dataset-definition-examples-report.pdf)** were we describe three benchmark datasets. The description files of the example datasets can be found in the **examples/evaluation** folder.
 
-## Using the plug-in
+## Using the plugin
 
-This work is still in a double-blind peer-review process. Therefore, the plugin is not published in the Visual Studio Code Market. Instead, a packaged release of the plugin, ready to be installed, can be found at the root folder of the project. 
+This work is still in a double-blind peer-review process. Therefore, the plugin is not published in the Visual Studio Code Market. Instead, a packaged release of the plugin, ready to be installed, can be found in the project's root folder. 
 
 The file is **Dataset-Descriptor-0.0.1.vsix**
 
@@ -21,9 +21,9 @@ cd datasets
 code --install-extension Dataset-Descriptor-0.0.1.vsix
 ```
 
-*Troubleshooting: If you are not able to see the syntax highlight in the examples files (p.e. *Melanoma.datadesc*) as the image below . Please, reload the VSCode editor and write the code --install command again*
+*Troubleshooting: If you are not able to see the syntax highlighted in the examples files (p.e. *Melanoma.datadesc*) as the image below. Please, reload the VSCode editor and write the code --install command again*
 
-*Recommendations: We recommend to have the Visual Studio Code 1.56 version or above.*
+*Recommendations: We recommend having the Visual Studio Code 1.56 version or above.*
 
 Great! That's it.
 
@@ -40,7 +40,7 @@ The full grammar in Extended Backus-Naur form (EBNF) can be seen in **src/langua
 
 
 
-If you want to contribute or dive into the plugin or the language, you may need extra steps. As Langium (the base framework of the plugin) is not stable, there are a few actions we need to do manually.
+You may need extra steps if you want to contribute or dive into the plugin or the language. As Langium (the base framework of the plugin) is not stable, there are a few actions we need to do manually.
 
 1 - "npm install" to install dependencies.
 
@@ -50,10 +50,8 @@ If you want to contribute or dive into the plugin or the language, you may need 
 
 4 - Get the folder /packages/langium-vscode and paste it inside your VSCode extension folder (tipically <user home>/.vscode/extensions)
   
-5 - Install de Langium plugin thourgh the UI of VSCode
+5 - Install the Langium plugin through the UI of VSCode
 
-
-## Testing the extensions under the hood
 
 This repo comes with an already built-in config to debug. Just go to Debug in VSCode, and launch the Extension config. Please check your port 6009 are free.
   
